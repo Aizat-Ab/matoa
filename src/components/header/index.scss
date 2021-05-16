@@ -6,15 +6,24 @@
     transition: 0,4s;
     &__logo{
         margin-right: 155px;
+        cursor: pointer;
     }
     &__ul{
         display: flex;
         cursor: pointer;
+        
         li{
             margin-right: 40px;
+            transition: 0.2s;
+            font-size: 20px;
+            line-height: 34px;
+            letter-spacing: 0.02em;
         }
     }
+    &__search{
+        margin: 0px 50px 0 50px;
+    }
     &__active{
-        color: blue;
+        color: #D84727;
     }
 }
