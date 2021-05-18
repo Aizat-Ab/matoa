@@ -3,7 +3,7 @@ import './index.scss';
 import ModalLogIn from './modalLogIn.jsx'
 
 const LogIn = () => {
-    const [modalActive, setModalActive] = React.useState(true);
+    const [modalActive, setModalActive] = React.useState(false);
 
     return (
         <div>
