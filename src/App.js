@@ -1,5 +1,7 @@
+import Slider from "react-slick";
 import Header from "./components/header";
-import Hero from "./components/hero";
+import Sliders from "./components/hero-slider";
+// import Hero from "./components/hero";
 import Home from "./components/home";
 import './index.scss';
 
@@ -10,7 +12,7 @@ function App() {
      <Header/>
      <Home/>
      </div>
-     <Hero/>
+     <Sliders/>
     </div>
   );
 }

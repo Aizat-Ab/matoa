@@ -1,13 +1,162 @@
 .login{
+    position: relative;
     display: flex;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 26px;
     cursor: pointer;
     font-size: 18px;
     line-height: 31px;
     letter-spacing: 0.02em;
     color: #333333;
+    background: transparent;
+    border: none;
+    outline: none;
     svg{
         margin-right: 10px;
     }
+    &__modalLogIn{
+        font-family: 'Nunito';
+        width: 454px;
+        height: 446px;
+        background: #D84727;
+        z-index: 999;
+        color: white;
+    }
+    &__inputs{
+        font-family: 'Taviraj';
+        width: 315px;
+        height: 44px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        margin-bottom: 22px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 31px;
+        color: #969696;
+        box-sizing: border-box;
+        padding: 0 15px 0 15px;
+    }
+    &__item{
+        padding: 69px;
+        p{
+            margin-bottom: 12px;
+            text-align: center;
+        }
+    }
+    &__google-acc{
+        input{
+            padding-left: 70px;
+        }
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            background: url('../../assets/google.svg') no-repeat center;
+            top: 0;
+            left: 15px;
+            width: 20px;
+            height: 19px;
+        }
+    }
+    &__que1,
+    &__que2{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    &__que1{
+        margin-right: 51px;
+    }
+
+    &__log{
+        font-family: 'Taviraj';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        position: relative;
+        padding: 10px 35px;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 155px;
+            height: 45px;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+        }
+    }
+    &__items{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &__label-check{
+        margin-right: 35px;
+        display: flex;
+    }
 }
+.modall{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.modall.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.checkbox{
+    display: none;
+    &__fake{
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        border: none;
+        background: white;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 17px;
+            height: 22px;
+            background: url('../../assets/checkbox.svg') no-repeat center;
+            top: 0;
+            left: 2px;
+            opacity: 0;
+        }
+    }
+    &__text{
+        margin-left: 12px;
+        font-family: 'Nunito';
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+.checkbox:checked + .checkbox__fake::before{
+    opacity: 1;
+}
+
+
+
+
+

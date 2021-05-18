@@ -1,12 +1,11 @@
 import React from 'react';
-import hero__img from  '../../assets/hero/watch.png';
-import './index.scss';
 import cicl from '../../assets/hero/cicl.svg';
+import './index.scss';
 
-const Hero = () => {
+const Hero = ({img}) => {
     return (
         <div className='hero'>
-            <img className='hero__watch col-6' src={hero__img} alt="" />
+            <img className='hero__watch col-6' src={img} alt="" />
             <div className='hero__left col-6'>
             <p className='hero__title'>WAY KAMBAS MINI EBONY</p>
             <p className='hero__subtitle'>MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino's skin.</p>
@@ -20,7 +19,9 @@ Add to cart</button>
             </div>
         </div>
         </div>
+        
+       
     )
 }
 
-export default Hero
+export default Hero;
