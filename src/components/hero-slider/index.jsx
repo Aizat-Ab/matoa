@@ -23,9 +23,28 @@ const Sliders = () => {
     return (
         <div>
             <Slider {...settings}>
-            <Hero img={watch}/>
-            <Hero img={watch1}/>
-            <Hero img={watch}/>
+            <Hero 
+            id = {1}
+            text ='JACQUES LEMANS - This wood is chosen to represent the Sumatran Rhino skin which is designed with an overlap.'
+            title='JACQUES LEMANS' 
+            img={watch}
+            price={12000}
+            oldPrice={1500}/>
+            <Hero 
+            id = {2}
+            text ='MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino skin which is designed with an overlap effect on its strap to represent'
+            title='WAY KAMBAS MINI EBONY' 
+            img={watch1}
+            price={8000}
+            oldPrice={10000}/>
+            <Hero 
+            id = {3}
+            text ='PIERRE LANNIER - skin which is designed with an overlap effect on its strap to represent'
+            title='PIERRE LANNIER' 
+            img={watch}
+            price= {9400}
+            oldPrice={11000}
+            />
             </Slider>
         </div>
     )

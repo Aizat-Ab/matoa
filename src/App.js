@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Sliders from "./components/hero-slider";
 // import Hero from "./components/hero";
 import Home from "./components/home";
+import Monthly from "./components/monthly";
 import './index.scss';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
      <Home/>
      </div>
      <Sliders/>
+     <Monthly/>
     </div>
   );
 }
