@@ -1,0 +1,67 @@
+{
+    "watches": [
+      {
+        "id": 4,
+        "imageUrl": "https://avatars.mds.yandex.net/get-mpic/1704691/img_id2195104994424523334.png/13hq",
+        "name": "Way Kambas Maple",
+        "price": 1.280000,
+        "sort": [0]
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://i.citrus.ua/imgcache/size_500/uploads/shop/7/6/768b1d6ce215177b6a531d33e3ae5556.jpg",
+        "name": "Kaili",
+        "price": 1.280000,
+        "sort": [0]
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJIvtLuurPbP-Kp64MtBM4QxNPwkzWjNHAkjdTU_lpondLFYemhk1l6TW8RNANdz_s9SA&usqp=CAU",
+        "name": "Sunda",
+        "price": 1.170000,
+        "sort": [1]
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdO86w3uVXqU_099DupVtRGmbo3aekUZqBpRiEpc9p7HlXVzS44DeVb-shsYp_NLjZzkw&usqp=CAU",
+        "name": "Tomia Ebony",
+        "price": 960.000,
+        "sort": [1]
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTscpzkHUwaMGbAhkrdqUIJguoXxvJGdPY-0TxdovwfakuF3JYwWPkXNif98c0jEK-D_As&usqp=CAU",
+        "name": "Mori",
+        "price": 950.00,
+        "sort": [1]
+      },
+      {
+        "id": 10,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNC8vlwmnxslnMbhyCH3CHlhNGR_DjO1NZMRVTTDcbolE8T1jtNfpLU4PLkMFzMf4OqvA&usqp=CAU",
+        "name": "Alor",
+        "price": 11950.00,
+        "sort": [1]
+      },
+      {
+        "id": 11,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkZe5zTWHhqo-nvts9IttuIQN_JkfTyPRuxD1Sbzqi3fZA5M3whp3xXGVOjK78538umvA&usqp=CAU",
+        "name": "Sikka (Ebony & Maple)",
+        "price": 1980.00,
+        "sort": [2]
+      },
+      {
+        "id": 12,
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT92glD3TDVw1bxrwCpvNhs6M81J5NvgRIyb6OBZ-RI7KQoE6y-QwUkdDpJ1HJj9iA3wB8&usqp=CAU",
+        "name": "Lore Walnut",
+        "price": 2348.00,
+        "sort": [2]
+      },
+      {
+        "id": 12,
+        "imageUrl": "https://www.mobilcadde.com/fotograflar/orj/eiroo-xiaomi-amazfit-pace-spor-silikon-kordon-42-mm-14016427102045762.jpg",
+        "name": "Way Kambas Limited Edition",
+        "price": 3429.00,
+        "sort": [2]
+      }
+    ]
+  }

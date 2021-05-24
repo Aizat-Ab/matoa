@@ -1,0 +1,94 @@
+.testimonials{
+    margin-bottom: 77px;
+    &__right{
+        margin-left: 100px;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        margin-bottom: 60px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: -8px;
+            left: 0;
+            width: 128px;
+            height: 1px;
+            border-bottom: 1px solid black;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: #333333;
+        width: 510px;
+        margin-bottom: 32px;
+    }
+    &__name{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;      
+        letter-spacing: 0.03em;
+        color: #333333;
+        margin-bottom: 2px;
+    }
+    &__job{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.03em;
+        color: #777777;
+    }
+}
+.slides {
+    position: relative;
+  }
+  
+  .slides .slick-prev,
+  .slides .slick-next {
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+  }
+  .slides .slick-prev {
+    left: 5%;
+    top: 620px;
+    left: 900px;
+    border: 2px solid #D84727;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        background: url('../../assets/hero/prev.png') no-repeat center;
+        width: 15px;
+        height: 25px;
+        transform: translate(-50%, -50%);
+    }
+  }
+  .slides .slick-next {
+    right: 5%;
+    top: 620px;
+    left: 980px;
+    border: 2px solid #D84727;
+    &::before{
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      background: url('../../assets/hero/next.png') no-repeat center;
+      width: 27px;
+      height: 33px;
+      transform: translate(-50%, -50%);
+  }
+  }
+.slick-track{
+    padding-bottom: 41px;
+}

@@ -1,0 +1,12 @@
+.invest{
+    padding: 40px 100px;
+    background: #DA5E42;
+    &__up{
+        margin-bottom: 10px;
+    }
+    &__up,
+    &__down{
+        display: flex;
+        justify-content: space-between;
+    }
+}

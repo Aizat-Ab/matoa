@@ -1,0 +1,50 @@
+.second{
+    margin: 128px 0px 60px 0;
+    &__box{
+        background: white;
+        width: 540px;
+        height: 270px;
+        padding: 32px;
+        box-sizing: border-box;
+        position: relative;
+        margin-right: 15px;
+        box-sizing: border-box;
+    }
+    &__title{
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 0.03em;
+        color: #333333;
+        margin-bottom: 8px;
+        span{
+            font-weight: bold;
+        }
+    }
+    &__text{
+        font-family: 'Nunito';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #777777;
+        width: 345px;
+        margin-bottom: 8px;
+    }
+    &__a{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        color: #333333;
+        text-decoration: underline;
+    }
+    &__img{
+        position: absolute;
+        top: 115px;
+        right: 10px;
+    }
+    &__img1{
+        position: absolute;
+        top: 115px;
+        right: 22px;
+    }
+}

@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { addToCart as addCart } from '../../redux/action/cart.js';
 
 const Hero = ({img, title, text, price, oldPrice, id}) => {
+    
     const newWatch = {
         id, 
         title,

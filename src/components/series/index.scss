@@ -1,0 +1,21 @@
+.series{
+    margin-bottom: 120px;
+    &__text{
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        margin-right: 170px;
+        margin-bottom: 60px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: -8px;
+            left: 0;
+            width: 65px;
+            height: 1px;
+            background:  #333333;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.instagram{
+    margin-top: 77px;
+    &__img{
+        margin: 40px 0 70px 0;
+        cursor: pointer;
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,106 @@
+.footer{
+    background: #D84727;
+    padding: 51px 0 75px 0;
+    color: white;
+    &__col1{
+        img{
+            margin-bottom: 27px;
+        }
+    }
+    &__address{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        margin-bottom: 2px;
+    }
+    &__text{
+        width: 255px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+    }
+    &__hour{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        margin-bottom: 2px;
+    }
+    &__time{
+        width: 140px;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 41px;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: 5px;
+            left: 0;
+            width: 60px;
+            height: 1px;
+            border-bottom: 1px solid white;
+        }
+    }
+    &__col2{
+        margin-bottom: 24px;
+        margin-left: 30px;
+    }
+    &__ul{
+        margin-bottom: 8px;
+        margin-right: 36px;
+        width: 97px;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    }
+    &__number{
+        li{
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.03em;
+        }
+        :nth-child(2) {
+            margin-top: 7px;
+          }
+        :nth-child(3) {
+            margin-top: 32px;
+          }
+    }
+    &__icon{
+        margin-top: 24px;
+        img{
+            margin-right: 24px;
+        }
+    }
+    &__col3{
+        margin-left: 60px;
+        li{
+            margin-bottom: -2px;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.03em;
+        }
+        a{
+            color: white;
+        }
+    }
+    &__col4{
+        margin-left: 60px;
+        li{
+            margin-bottom: -2px;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.03em;
+        }
+        a{
+            color: white;
+        }
+    }
+}
