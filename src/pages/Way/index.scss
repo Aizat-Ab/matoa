@@ -1,0 +1,100 @@
+.way{
+    &__hero{
+        display: flex;
+    }
+    &__nav{
+        margin: 74px 0 45px 0;
+        display: flex;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        color: #333333;
+    }
+    &__images{
+        display: flex;
+        flex-direction: column;
+        margin-right: 47px;
+        img{
+            margin-bottom: 24px;
+        }
+    }
+    &__right{
+        margin-left: 40px;
+        img{
+            margin-right: 16px;
+        }
+    }
+    &__title{
+        font-size: 60px;
+        line-height: 80px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        width: 413px;
+        margin-bottom: 8px;
+    }
+    &__old-price{
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #777777;
+        margin-bottom: 2px;
+        text-decoration: line-through;
+    }
+    &__new-price{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 41px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        margin-bottom: 16px;
+    }
+    &__model{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        color: #333333;
+        margin-bottom: 9px;
+    }
+    &__btn{
+        display: flex;
+        margin-top: 40px;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__increment,
+    &__decrement{
+        width: 30px;
+        height: 30px;
+        outline: none;
+    }
+    &__increment{
+        border: 1px solid #777777;
+        background: transparent;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+    &__decrement{
+        background: #D84727;
+        border: none;
+        margin-right: 36px;
+        color: white;
+        cursor: pointer;
+
+    }
+    &__volume{
+        margin-right: 16px;
+        font-size: 36px;
+        line-height: 61px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        cursor: pointer;
+    }
+    .active{
+        color:  #D84727;
+    }
+    .hero__btn{
+        margin-right: 50px;
+    }
+}

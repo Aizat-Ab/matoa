@@ -4,10 +4,9 @@ import './index.scss';
 import axios from 'axios';
 
 const Series = () => {
-
     const [watch, setWhatches] = React.useState([]);
     React.useEffect(async()=>{
-        const responce = await axios.get('http://localhost:3000/dataBase.json');
+        const responce = await axios.get('http://localhost:3001/dataBase.json');
         setWhatches(responce.data.watches);
       },[]); 
 

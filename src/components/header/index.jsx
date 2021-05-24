@@ -5,6 +5,8 @@ import classnames from 'classnames';
 import Cart from '../../pages/Cart';
 import LogIn from '../../pages/logIn';
 import Search from '../search';
+import Page from '../../pages/page';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -15,7 +17,9 @@ const Header = () => {
     }
     return (
         <div className='header'>
+            <Link to='/'>
             <img className='header__logo' src={logo} alt="" />
+            </Link>
             <ul className='header__ul'>
             {navWords.map((item, index)=>{
                 return <li className={classnames({
@@ -23,6 +27,7 @@ const Header = () => {
                 })} onClick={()=>setNavWords(index)}>{item}</li>
             })}
             </ul>
+            <Page/>
         </div>
     )
 }

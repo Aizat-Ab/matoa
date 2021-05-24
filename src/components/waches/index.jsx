@@ -1,7 +1,5 @@
 import React from 'react';
 import './index.scss';
-import a from '../../assets/a.png';
-
 
 const Watches = ({name,price,imageUrl}) => {
     return (
@@ -15,4 +13,4 @@ const Watches = ({name,price,imageUrl}) => {
     )
 }
 
-export default Watches
+export default Watches;
