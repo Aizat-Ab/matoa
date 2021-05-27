@@ -6,8 +6,8 @@ import axios from 'axios';
 const Series = () => {
     const [watch, setWhatches] = React.useState([]);
     React.useEffect(async()=>{
-        const responce = await axios.get('http://localhost:3001/dataBase.json');
-        setWhatches(responce.data.watches);
+        const responce = await axios.get('http://localhost:3010/watches');
+        setWhatches(responce.data);
       },[]); 
 
     return (
