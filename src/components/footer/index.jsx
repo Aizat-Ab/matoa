@@ -9,6 +9,7 @@ import youtube from '../../assets/footer/youtube.svg';
 const Footer = () => {
     return (
         <div className='footer row'>
+            <div className='container footer__row'>
             <div className='footer__col1'>
                 <img src={footer__logo} alt="" />
                 <p className='footer__address'>Address</p>
@@ -63,6 +64,7 @@ Jl. Setrasari Kulon III, No. 10-12, Sukarasa, Sukasari, Bandung, Jawa Barat, Ind
                 <a href=""><li>Singo</li></a>
                 <a href=""><li>Rakai</li></a>
             </ul>
+            </div>
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 import React from 'react';
 import Testimonials from '../testimonials';
+import '../testimonials/index.scss';
 //Slider
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

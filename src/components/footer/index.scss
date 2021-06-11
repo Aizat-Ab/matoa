@@ -7,6 +7,10 @@
             margin-bottom: 27px;
         }
     }
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
     &__address{
         font-weight: 500;
         font-size: 20px;
@@ -50,7 +54,7 @@
     }
     &__col2{
         margin-bottom: 24px;
-        margin-left: 30px;
+        margin-left: 104px;
     }
     &__ul{
         margin-bottom: 8px;
@@ -80,7 +84,7 @@
         }
     }
     &__col3{
-        margin-left: 60px;
+        margin-left: 100px;
         li{
             margin-bottom: -2px;
             font-size: 16px;
@@ -92,7 +96,7 @@
         }
     }
     &__col4{
-        margin-left: 60px;
+        margin-left: 100px;
         li{
             margin-bottom: -2px;
             font-size: 16px;

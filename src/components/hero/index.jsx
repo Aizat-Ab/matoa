@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import cicl from "../../assets/hero/cicl.svg";
 import "./index.scss";
 import { useDispatch } from "react-redux";
-import { addToCart as addCart } from "../../redux/action/cart.js";
+import { addCartAction } from "../../redux/action/cart.js";
 
 const Hero = ({ img, title, text, price, oldPrice, id }) => {
   const newWatch = {
@@ -17,7 +17,7 @@ const Hero = ({ img, title, text, price, oldPrice, id }) => {
   const dispatch = useDispatch();
 
   const addToCart = () => {
-    dispatch(addCart(newWatch));
+    dispatch(addCartAction(newWatch));
   };
 
   return (

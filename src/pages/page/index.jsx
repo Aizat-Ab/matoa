@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../components/home/index.scss';
 import Search from '../../components/search';
-import Cart from '../Cart';
+import Carted from '../Cart';
 import LogIn from '../logIn';
 
 const Page = () => {
@@ -9,7 +9,7 @@ const Page = () => {
         <div className='home'>
             <Search/>
             <LogIn/>
-            <Cart/>
+            <Carted/>
         </div>
     )
 }

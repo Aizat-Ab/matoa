@@ -2,14 +2,16 @@ import React from 'react';
 import Watches from '../waches';
 import './index.scss';
 import axios from 'axios';
+import {useSelector} from 'react-redux';
 
 const Series = () => {
+    
     const [watch, setWhatches] = React.useState([]);
     React.useEffect(async()=>{
-        const responce = await axios.get('http://localhost:3010/watches');
+        const responce = await axios.get('http://localhost:3008/watches');
         setWhatches(responce.data);
       },[]); 
-
+      
     return (
         <div className='series'>
             <div className='series__title row'>
@@ -19,7 +21,7 @@ const Series = () => {
             </div>
             <div className='row'>
             {watch.map((obj)=>(
-                    <Watches {...obj}/>
+                    <Watches {...obj} id={obj.id}/>
                 ))}
             </div>
         </div>

@@ -11,8 +11,16 @@
     background: transparent;
     border: none;
     outline: none;
+    position: relative;
     svg{
         margin-right: 10px;
+    }
+    &__wrapper{
+        z-index: 222;
+        position: absolute;
+        top: 211px;
+        right: 661px;
+        transition: 0.3s;
     }
     &__modalLogIn{
         font-family: 'Nunito';
@@ -102,25 +110,25 @@
         display: flex;
     }
 }
-.modall{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0,0,0,0.4);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.2s;
-}
-.modall.active{
-    opacity: 1;
-    pointer-events: all;
-}
+// .modall{
+//     height: 100vh;
+//     width: 100vw;
+    // background-color: rgba(0,0,0,0.4);
+    // position: fixed;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     z-index: 5;
+//     opacity: 0;
+//     pointer-events: none;
+//     transition: 0.2s;
+// }
+// .modall.active{
+//     opacity: 1;
+//     pointer-events: all;
+// }
 
 .checkbox{
     display: none;

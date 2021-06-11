@@ -9,6 +9,11 @@ import monthly3 from '../../assets/monthly/monthly3.png';
 import monthly4 from '../../assets/monthly/monthly4.png';
 
 const Monthly = () => {
+    // const state = useSelector(state => state.items)
+
+    // const addMoviess = Object.keys(items).map((key) => {
+    //     return items[key].items[0]
+    // });
 
     // const [watch, setWhatches] = React.useState([]);
     // React.useEffect(async()=>{
@@ -21,25 +26,30 @@ const Monthly = () => {
             <p className='monthly__section'>Monthly Deals</p>
 
         <div className='monthly__wrap'>
+            
                 <Watch 
+                id={34}
                 name={'Singo Maple'}
                 imageUrl={monthly1}
-                newPrice={1.264000} 
+                price={1264} 
                 oldPrice={1.500000}/>
                 <Watch 
+                id={56}
                 name={'Singo Ebony'}
                 imageUrl={monthly2}
-                newPrice={1.500000} 
+                price={15} 
                 oldPrice={1.500000}/>
                 <Watch 
+                id={78}
                 name={'Rakai Ebony'}
                 imageUrl={monthly3}
-                newPrice={1.264000} 
+                price={12640} 
                 oldPrice={1.118000}/>
                 <Watch 
+                id={98}
                 name={'Way Kambas Mini Maple'}
                 imageUrl={monthly4}
-                newPrice={1.264000} 
+                price={1264} 
                 oldPrice={1.024000}/>
         </div>
             

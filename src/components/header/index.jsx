@@ -22,8 +22,7 @@ const Header = () => {
       <ul className="header__ul">
         {navWords.map((item, index) => {
           return (
-            <li
-              className={classnames({
+            <li className={classnames({
                 header__active: index === click,
               })}
               onClick={() => setNavWords(index)}

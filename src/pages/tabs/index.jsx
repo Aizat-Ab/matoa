@@ -6,7 +6,7 @@ import detail from '../../assets/detail.png';
 //img 
 import custom1 from '../../assets/custom1.png';
 import custom2 from '../../assets/custom2.png';
-import watch from '../../assets/adjust/image.png';
+import watch from '../../assets/way/image1.png';
 import image1 from '../../assets/adjust/image1.png';
 import image2 from '../../assets/adjust/image2.png';
 import image11 from '../../assets/adjust/image11.png';
@@ -20,6 +20,7 @@ import care4 from '../../assets/care/care4.png';
 import gallery1 from '../../assets/gallery/gallery1.png';
 import gallery2 from '../../assets/gallery/gallery2.png';
 import gallery3 from '../../assets/gallery/gallery3.png';
+import Header from '../../components/header';
 
 const Tabs = () => {
     const tabs = ['Detail','Warranty','Custom Engrave','How to Adjust','How to Care','Gallery'];
@@ -31,8 +32,16 @@ const Tabs = () => {
     }
     
     return (
-        <div className='tabs'>
-            <Way/>
+        <div className='tabs container'>
+            <Header/>
+            <Way
+            id = {1}
+            text ='JACQUES LEMANS - This wood is chosen to represent the Sumatran Rhino skin which is designed with an overlap.'
+            title='JACQUES LEMANS' 
+            img={watch}
+            price={12000}
+            oldPrice={1500}
+            />
             <ul className='tabs__navWords'>
             {tabs.map((item,index)=>{
                 return <li className={classNames({

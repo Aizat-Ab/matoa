@@ -14,6 +14,7 @@ import invest9 from '../../assets/invest/invest9.png';
 const Invest = () => {
     return (
         <div className='invest'>
+        <div className=' container'>
             <div className='invest__up row'>
             <div className='invest__img'><img src={invest1} alt="" /></div>
             <div className='invest__img'><img src={invest2} alt="" /></div>
@@ -29,6 +30,8 @@ const Invest = () => {
             <div className='invest__img'><img src={invest} alt="" /></div>
             </div>
         </div>
+        </div>
+       
     )
 }
 

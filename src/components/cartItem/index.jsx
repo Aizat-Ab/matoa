@@ -1,15 +1,17 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart } from "../../redux/action/cart";
+import { removeCartItem } from "../../redux/action/cart";
+import { plusCartAction } from '../../redux/action/cart';
 
-const CartItem = ({ title, img, price, oldPrice }) => {
+
+const CartItem = ({id, title, img, price, oldPrice, totalPrice}) => {
   const [count, setCount] = React.useState(1);
 
   const dispatch = useDispatch();
 
-  const incrementOnClick = () => {
-    setCount(count + 1);
-  };
+  const handlePlusCartItem = () => {
+    dispatch(plusCartAction(id));
+};
   const decrementOnClick = () => {
     if (count > 1) {
       setCount(count - 1);
@@ -17,9 +19,12 @@ const CartItem = ({ title, img, price, oldPrice }) => {
   };
   const items = useSelector((state) => state.items);
 
-  const removeOnClickItem = () => {
-    dispatch(removeFromCart());
-  };
+  // const handleRemoveClick = (id) => {
+  //   if(window.confirm('sdfsdf')){
+  //     dispatch(removeCartItem(id))
+  //   }
+    
+  // };
 
   return (
     <div className="cart__border">
@@ -43,11 +48,11 @@ const CartItem = ({ title, img, price, oldPrice }) => {
             -
           </button>
           <span className="cart__volume">{count}</span>
-          <button onClick={incrementOnClick} className="cart__btn">
+          <button onClick={handlePlusCartItem} className="cart__btn">
             +
           </button>
-          <span className="cart__price">{price * count}</span>
-          <button onClick={removeOnClickItem} className="cart__delete">
+          <span className="cart__price">Rp. {totalPrice}</span>
+          <button className="cart__delete">
             <svg
               width="17"
               height="19"

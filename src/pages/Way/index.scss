@@ -11,6 +11,9 @@
         letter-spacing: 0.02em;
         color: #333333;
     }
+    &__img{
+            width: 320px;
+    }
     &__images{
         display: flex;
         flex-direction: column;

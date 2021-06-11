@@ -1,10 +1,16 @@
 import React from 'react';
 import './index.scss';
+import '../../components/home/index.scss';
 
 const ModalLogIn = ({active, setActive}) => {
     return (
-        <div onClick={()=>setActive(false)} className ={active ? 'modall active' : 'modall'}>
-            <div onClick={e => e.stopPropagation()} className='login__modalLogIn'>
+        <div onClick={()=>setActive(false)} style={
+            {transform: active ? 'translateY(0vh)' : 'translateY(-100vh)', 
+                opacity: active ? '1' : '0',
+                position: 'fixed'
+                }} className ='login__wrapper'>
+
+            <div className='login__modalLogIn'>
             <div className='login__item'>
                 <form className='login__form'>
                 <label className='login__google-acc'>

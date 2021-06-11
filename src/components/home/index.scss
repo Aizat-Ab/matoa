@@ -1,4 +1,12 @@
 .home{
     display: flex;
     align-items: center;
+    position: relative;
 }
+.cart__wrapper{
+    position: absolute;
+    right: -1px;
+}
+// .login__wrapper{
+//     position: absolute;
+// }
