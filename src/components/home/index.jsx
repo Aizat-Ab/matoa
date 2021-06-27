@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../header';
 import Sliders from '../hero-slider/index';
 import Instagram from '../instagram';
 import Invest from '../invest';
@@ -10,14 +9,14 @@ import Series from '../series';
 import TesSlider from '../testimonial\'sSlider';
 import './index.scss';
 import { useDispatch } from 'react-redux';
+import Hed from '../hed/index';
 
 const Home = () => {
-    const dispatch = useDispatch();
     
     return (
         <div>
         <div className='container'>
-        <Header/>
+        <Hed/>
         <Sliders/>
         <SecondSection/>
         <Monthly/>

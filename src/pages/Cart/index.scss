@@ -19,10 +19,12 @@
     }
     &__wrapper{
         width: 1110px;
+        height: 658px;
         background: #F7F6F4;
         padding: 32px;
         box-sizing: border-box;
         transition: all 0.3s ease;
+        overflow-y: auto;
     }
     &__border{
         display: flex;
@@ -162,7 +164,7 @@
     }
     &__check{
         font-family: 'Taviraj';
-        width: 1110px;
+        width: 980px;
         height: 69px;
         background: #D84727;
         font-weight: 600;

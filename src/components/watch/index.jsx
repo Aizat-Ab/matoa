@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import '../monthly/index.scss';
-import {addCartAction} from  '../../redux/action/cart.js'
+import {addToCart} from  '../../redux/action/cart.js'
 
 const Watch = ({name, imageUrl, price, oldPrice, id}) => {
     const dispatch = useDispatch()
@@ -14,7 +14,7 @@ const Watch = ({name, imageUrl, price, oldPrice, id}) => {
         imageUrl
     }
     const addToCarts = () => {
-        dispatch(addCartAction(monthly))
+        dispatch(addToCart(monthly))
     }
     return (
         <div className='monthly__box'>

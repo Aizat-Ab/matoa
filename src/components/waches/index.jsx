@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { addCartAction  } from '../../redux/action/cart';
+import { addToCart  } from '../../redux/action/cart';
 
 const Watches = ({id,name,price,imageUrl}) => {
     
@@ -14,7 +14,7 @@ const Watches = ({id,name,price,imageUrl}) => {
         imageUrl
     }
     const add = ()=> {
-        dispatch(addCartAction(back))
+        dispatch(addToCart(back))
     }
     return (
         <div className='watches row'>
@@ -22,7 +22,7 @@ const Watches = ({id,name,price,imageUrl}) => {
             <div className='watches__right'>
             <p className='watches__name'>{name}</p>
             <p className='watches__price'>Rp {price}</p>
-            <button className='watches__add' onClick={add} >Add to cart</button>
+            <button onClick ={ add } className='watches__add' >Add to cart</button>
             </div>
         </div>
     )

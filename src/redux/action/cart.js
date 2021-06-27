@@ -1,22 +1,32 @@
-// export const addToCart = (movie) => ({
+// export const addCartAction = (pizzaObject) => ({
 //     type: 'ADD_TO_CART',
-//     payload: movie,
-// })
-export const addCartAction = (pizzaObject) => ({
-    type: 'ADD_TO_CART',
-    payload: pizzaObject,
-  });
+//     payload: pizzaObject,
+//   });
   
-export const removeFromCart = () => ({
-    type: 'REMOVE_FROM_CART',
-})
+// export const removeWatch = (id) => ({
+//   type: 'REMOVE_WATCH',
+//   payload: id,
+// })
 
-export const removeCartItem = (id) => ({
-    type: 'REMOVE_CART_ITEM',
+// export const plusItem = (id) => ({
+//   type: 'PLUS_CART_ITEM',
+//   payload: id,
+// })
+
+// export const minusItem = (id) => ({
+//   type: 'MINUS_CART_ITEM',
+//   payload: id,
+// })
+// export const deleteAll = (id) => ({
+//   type: 'A',
+//   payload: id,
+// })
+
+
+export const addToCart = (id) => ({
+    type: 'ADD_TO_WATCH',
     payload: id
 })
-
-export const plusCartAction = (id) => ({
-    type: 'PLUS_CART_ITEM',
-    payload: id,
-  });
+export const clearCart = () => ({
+    type: 'CLEAR_CART',
+})

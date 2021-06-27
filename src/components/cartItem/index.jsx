@@ -1,30 +1,41 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeCartItem } from "../../redux/action/cart";
-import { plusCartAction } from '../../redux/action/cart';
+import { plusItem, minusItem, removeWatch } from '../../redux/action/cart';
 
 
-const CartItem = ({id, title, img, price, oldPrice, totalPrice}) => {
-  const [count, setCount] = React.useState(1);
+const CartItem = ({id, title, img, price, oldPrice, totalPrice, totalCount, onRemove }) => {
+  // const a = {
+  //   id, title, img, price, oldPrice, totalPrice, totalCount
+  // }
+  const [count, setCount] = React.useState(0);
 
   const dispatch = useDispatch();
 
-  const handlePlusCartItem = () => {
-    dispatch(plusCartAction(id));
-};
-  const decrementOnClick = () => {
-    if (count > 1) {
-      setCount(count - 1);
-    }
-  };
+
+  // const decrementOnClick = () => {
+  //   if (count > 1) {
+  //     setCount(count - 1);
+  //   }
+  // };
   const items = useSelector((state) => state.items);
 
-  // const handleRemoveClick = (id) => {
-  //   if(window.confirm('sdfsdf')){
-  //     dispatch(removeCartItem(id))
-  //   }
-    
-  // };
+  // const handleRemoveClick = () => {
+  //   onRemove(id)
+  // }
+
+  // const onPlusItem = () => {
+  //   dispatch(plusItem(id))
+  // }
+
+  // const onMinusItem = () => {
+  //   dispatch(minusItem(id))
+  // }
+
+//   const onRemoveItem = () => {
+//     if (window.confirm('Вы действительно хотите удалить пиццу?')){
+//         dispatch(removeWatch(id))
+//     }
+// }
 
   return (
     <div className="cart__border">
@@ -44,15 +55,15 @@ const CartItem = ({id, title, img, price, oldPrice, totalPrice}) => {
           <input className="cart__input" type="text" />
         </label>
         <div className="cart__btns">
-          <button onClick={decrementOnClick} className="cart__btn">
+          <button className="cart__btn">
             -
           </button>
-          <span className="cart__volume">{count}</span>
-          <button onClick={handlePlusCartItem} className="cart__btn">
+          <span className="cart__volume">{totalCount}</span>
+          <button  className="cart__btn">
             +
           </button>
           <span className="cart__price">Rp. {totalPrice}</span>
-          <button className="cart__delete">
+          <button  className="cart__delete">
             <svg
               width="17"
               height="19"

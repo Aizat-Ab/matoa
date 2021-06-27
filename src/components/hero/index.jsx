@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cicl from "../../assets/hero/cicl.svg";
 import "./index.scss";
-import { useDispatch } from "react-redux";
-import { addCartAction } from "../../redux/action/cart.js";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../redux/action/cart.js";
 
 const Hero = ({ img, title, text, price, oldPrice, id }) => {
   const newWatch = {
@@ -16,9 +16,11 @@ const Hero = ({ img, title, text, price, oldPrice, id }) => {
   };
   const dispatch = useDispatch();
 
-  const addToCart = () => {
-    dispatch(addCartAction(newWatch));
+  const addToCarts = () => {
+    dispatch(addToCart(newWatch));
   };
+  
+  const {totalPrice, totalCount, items} = useSelector((state) => state);
 
   return (
     <div className="hero">
@@ -30,7 +32,7 @@ const Hero = ({ img, title, text, price, oldPrice, id }) => {
           Discover
         </Link>
         <div className=" hero__row">
-          <button onClick={addToCart} className="hero__btn">
+          <button onClick={addToCarts} className="hero__btn">
             <svg
               width="22"
               height="19"

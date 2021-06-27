@@ -7,6 +7,7 @@ import {useSelector} from 'react-redux';
 const Series = () => {
     
     const [watch, setWhatches] = React.useState([]);
+
     React.useEffect(async()=>{
         const responce = await axios.get('http://localhost:3008/watches');
         setWhatches(responce.data);

@@ -20,7 +20,7 @@ import care4 from '../../assets/care/care4.png';
 import gallery1 from '../../assets/gallery/gallery1.png';
 import gallery2 from '../../assets/gallery/gallery2.png';
 import gallery3 from '../../assets/gallery/gallery3.png';
-import Header from '../../components/header';
+import Hed from '../../components/hed/index';
 
 const Tabs = () => {
     const tabs = ['Detail','Warranty','Custom Engrave','How to Adjust','How to Care','Gallery'];
@@ -33,7 +33,7 @@ const Tabs = () => {
     
     return (
         <div className='tabs container'>
-            <Header/>
+            <Hed/>
             <Way
             id = {1}
             text ='JACQUES LEMANS - This wood is chosen to represent the Sumatran Rhino skin which is designed with an overlap.'

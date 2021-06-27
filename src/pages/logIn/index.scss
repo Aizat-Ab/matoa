@@ -11,23 +11,21 @@
     background: transparent;
     border: none;
     outline: none;
-    position: relative;
     svg{
         margin-right: 10px;
     }
     &__wrapper{
-        z-index: 222;
-        position: absolute;
+        z-index: 9999;
         top: 211px;
-        right: 661px;
+        right: 260px;
         transition: 0.3s;
+        position: absolute;
     }
     &__modalLogIn{
         font-family: 'Nunito';
         width: 454px;
         height: 446px;
         background: #D84727;
-        z-index: 999;
         color: white;
     }
     &__inputs{
