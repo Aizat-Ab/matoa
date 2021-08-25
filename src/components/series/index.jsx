@@ -9,7 +9,7 @@ const Series = () => {
     const [watch, setWhatches] = React.useState([]);
 
     React.useEffect(async()=>{
-        const responce = await axios.get('https://matoa.herokuapp.com/3008/watches');
+        const responce = await axios.get('https://matoa.herokuapp.com/api');
         setWhatches(responce.data);
       },[]); 
       
